@@ -3,7 +3,7 @@ set -u
 API="https://api.vercel.com"
 TEAM="$VERCEL_ORG_ID"
 TOKEN="$VERCEL_ARTIFACTS_TOKEN"
-HASH="deadbeefdeadbeef"
+HASH="056d6b0225820294"
 
 echo "----DRY----"
 turbo run build --dry-run=json > /tmp/dry.json 2>/dev/null
