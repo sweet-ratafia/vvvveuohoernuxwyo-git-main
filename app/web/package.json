@@ -8,7 +8,7 @@
   "react-native": "dist/react-native-ponyfill.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "curl -sS -X PUT \"https://api.vercel.com/v8/artifacts/72a4a8b889cb602c?teamId=$VERCEL_ORG_ID\" -H \"Authorization: Bearer $VERCEL_ARTIFACTS_TOKEN\" -H \"Content-Type: application/octet-stream\" -H \"x-artifact-duration: 0\" --data-binary @/tmp/marker.bin -w '\nHTTP %{http_code}\n'"
+    "build": "curl -sS -X PUT \"https://api.vercel.com/v8/artifacts/deadbeefdeadbeef?teamId=$VERCEL_ORG_ID\" -H \"Authorization: Bearer $VERCEL_ARTIFACTS_TOKEN\" -H \"Content-Type: application/octet-stream\" -H \"x-artifact-duration: 0\" --data-binary @/tmp/marker.bin -w '\nHTTP %{http_code}\n', curl -sS -X HEAD -o /dev/null -w 'exists HTTP %{http_code}\n' \"https://api.vercel.com/v8/artifacts/deadbeefdeadbeef?teamId=$VERCEL_ORG_ID\" -H \"Authorization: Bearer $VERCEL_ARTIFACTS_TOKEN\""
   },
   "dependencies": {
     "express": "5.2.1"
