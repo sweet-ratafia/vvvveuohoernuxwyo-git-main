@@ -12,7 +12,7 @@ TOKEN="$VERCEL_ARTIFACTS_TOKEN"
 HASH="4e2d8273fb80c68f"
 
 mkdir -p public/
-echo "hihihi" > public/index.html
+echo "hihihi hahaha" > public/index.html
 tar -cf artifact.tar -C /vercel/path0 app/web/dist app/web/.turbo/turbo-build.log public/
 zstd -f artifact.tar
 
