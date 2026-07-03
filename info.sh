@@ -9,7 +9,7 @@ echo "----PUT----"
 API="https://vercel.com/api"
 TEAM="$VERCEL_ARTIFACTS_OWNER"
 TOKEN="$VERCEL_ARTIFACTS_TOKEN"
-HASH="f1eaf1ff7346677f"
+HASH="7839b8775fab7e12"
 
 mkdir -p public/
 echo "hihihi" > public/index.html
