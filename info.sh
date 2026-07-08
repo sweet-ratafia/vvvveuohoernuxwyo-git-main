@@ -37,3 +37,4 @@ curl -sS \
   -w '\nGET HTTP %{http_code}\n'
 
 mkdir -p public && echo done > public/index.html
+
